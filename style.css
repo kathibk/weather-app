@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300&display=swap");
+body {
+  font-family: "Roboto Flex", sans-serif;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(137, 210, 253) 0%,
+    rgb(255, 241, 188) 90%
+  );
+  color: #303036;
+}
+.header {
+  margin: 100px 10px 20px 10px;
+  text-align: center;
+}
+
+input.searchInput {
+  width: 500px;
+  padding: 7px 10px 7px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #999;
+  font-size: 18px;
+}
+input.submit {
+  width: 200px;
+  padding: 7px 5px 7px 5px;
+  border: 1px solid #999;
+  color: #303036;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 120ms;
+}
+input.submit:hover {
+  background: rgb(212, 208, 208);
+}
+
+button {
+  padding: 7px 5px 7px 5px;
+  border: 1px solid #999;
+  color: #303036;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 120ms;
+}
+
+button:hover {
+  background: rgb(212, 208, 208);
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  margin-left: 350px;
+  margin-bottom: 0;
+}
+
+.cityMarker {
+  color: rgb(255, 241, 188);
+}
+
+.date {
+  margin-left: 350px;
+  font-size: 16px;
+}
+.tmpr {
+  font-size: 45px;
+  font-weight: 600;
+  margin-left: 750px;
+  position: relative;
+  top: -120px;
+}
+.info {
+  margin-left: 950px;
+  position: relative;
+  top: -190px;
+}
+.tmpr,
+.info {
+  margin-bottom: 0;
+}
+
+h2 {
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+  color: #303036;
+  font-size: 23px;
+  border: 3px dotted rgb(255, 241, 188);
+  border-radius: 10px;
+  padding: 5px 20px;
+  width: 500px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.d-forcst {
+  margin: 10px 530px 0 330px;
+}
+.col-icons {
+  margin-left: 350px;
+  position: relative;
+  top: -120px;
+}
+
+.col-tmpr {
+  margin-left: 650px;
+  position: relative;
+  top: -240px;
+}

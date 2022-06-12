@@ -15,6 +15,7 @@ body {
 }
 
 input.searchInput {
+  display: inline-block;
   width: 500px;
   padding: 7px 10px 7px 10px;
   margin-bottom: 20px;
@@ -22,6 +23,7 @@ input.searchInput {
   font-size: 18px;
 }
 input.submit {
+  display: inline-block;
   width: 200px;
   padding: 7px 5px 7px 5px;
   border: 1px solid #999;
@@ -35,6 +37,7 @@ input.submit:hover {
 }
 
 button {
+  display: inline-block;
   padding: 7px 5px 7px 5px;
   border: 1px solid #999;
   color: #303036;
@@ -48,20 +51,23 @@ button:hover {
 }
 
 h1 {
+  display: inline-block;
   font-family: "Bebas Neue", cursive;
   margin-left: 350px;
   margin-bottom: 0;
 }
 
 .cityMarker {
+  display: inline-block;
   color: rgb(255, 241, 188);
 }
 
 .date {
-  margin-left: 350px;
+  display: inline-block;
   font-size: 16px;
 }
 .tmpr {
+  display: inline-block;
   font-size: 45px;
   font-weight: 600;
   margin-left: 750px;
@@ -69,6 +75,7 @@ h1 {
   top: -120px;
 }
 .info {
+  display: inline-block;
   margin-left: 950px;
   position: relative;
   top: -190px;
@@ -107,4 +114,8 @@ li {
   margin-left: 650px;
   position: relative;
   top: -240px;
+}
+
+.footer {
+  text-align: center;
 }

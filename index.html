@@ -5,83 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>☁️ Cloudy.com</title>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/7bafbbdf86.js"
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="header">
-      <form id="submitform">
-        <input type="text" 
-        class="searchInput" 
-        placeholder="Type here the city you want to search 🌆" 
-        autocomplete="off"
-        autofocus="on"
-        />
-        <input type="submit" 
-        class="submit" 
-        value="Find out the weather" />
-      </form>
-      
-      <button id="current">Check the weather in your current location</button>
-    </div>
-    <div class="forecastCurrent">
-      <h1>
-        The weather in
-        <br />
-        <span class="cityMarker"> Kharkiv</span>
-      </h1>
-
-      <p class="date" id="currentDate">Today is 15.05.2022 21:20</p>
-
-      <p class="tmpr">13ºC</p>
-
-      <div class="info">
-        Humidity: 84 %
-        <br />
-        Wind: 8 km/h
-        <br />
-        Feels like: 13ºC
+    <div class="body-container">
+      <div class="search-form">
+        <form id="submit-form">
+          <input
+            type="text"
+            class="searchInput"
+            placeholder="Type your city 🌆"
+            autocomplete="off"
+            autofocus="on"
+          />
+          <input type="submit" class="submit-input" value="Search" />
+          <button id="current-button">📍</button>
+        </form>
+        <p class="date" id="currentDate">Today is 15.05.2022 21:20</p>
       </div>
-    </div>
-    <div class="forecast5days">
-      <h2>Forecast for the next 5 days</h2>
-      <div class="d-forcst">
-          <div class="col-days">
-            <ul>
-              <li class="days">MO.</li>
-              <li class="days">TUE.</li>
-              <li class="days">WED.</li>
-              <li class="days">THU.</li>
-              <li class="days">FR.</li>
-            </ul>
-          </div>
-          <div class="col-icons">
-            <ul>
-              <li><i class="fa-solid fa-cloud"></i></li>
-              <li><i class="fa-solid fa-cloud-rain"></i></li>
-              <li><i class="fa-solid fa-cloud-rain"></i></li>
-              <li><i class="fa-solid fa-cloud"></i></li>
-              <li><i class="fa-solid fa-cloud-sun"></i></li>
-            </ul>
-          </div>
-          <div class="col-tmpr">
-            <ul>
-              <li>10ºC</li>
-              <li>9ºC</li>
-              <li>11ºC</li>
-              <li>8ºC</li>
-              <li>12ºC</li>
-            </ul>
-          </div>
+      <div class="forecastCurrent">
+        <h1>
+          The weather in
+          <br />
+          <span class="cityMarker"> Kharkiv</span>
+        </h1>
+        <p class="tmpr">13ºC|ºF</p>
+
+        <div class="info">
+          Humidity: 84 %
+          <br />
+          Wind: 8 km/h
+          <br />
+          Feels like: 13ºC|ºF
         </div>
       </div>
     </div>
-    <div class="footer"> <a href="https://github.com/kathibk/weather-app" target="_blank">Open Source</a> Kateryna Bobrysheva</div>
-    <script src="index.js"></script>
+    <div class="footer">
+      <a href="https://github.com/kathibk/weather-app" target="_blank"
+        >Open Source</a
+      >
+      Kateryna Bobrysheva
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

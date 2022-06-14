@@ -1,30 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300&display=swap");
+
 body {
   font-family: "Roboto Flex", sans-serif;
+  color: #303036;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 25px;
   background: radial-gradient(
     circle at 10% 20%,
     rgb(137, 210, 253) 0%,
     rgb(255, 241, 188) 90%
   );
-  color: #303036;
 }
-.header {
-  margin: 100px 10px 20px 10px;
-  text-align: center;
+.body-container {
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 10px 25px;
+  background: rgb(250, 238, 195);
+  border: 2px solid rgb(184, 241, 241);
+  border-radius: 30px;
+}
+.search-form {
+  margin: 30px 10px 20px 10px;
+  text-align: left;
 }
 
 input.searchInput {
   display: inline-block;
-  width: 500px;
+  width: 300px;
   padding: 7px 10px 7px 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #999;
   font-size: 18px;
 }
-input.submit {
+input.submit-input {
   display: inline-block;
-  width: 200px;
+  width: 150px;
   padding: 7px 5px 7px 5px;
   border: 1px solid #999;
   color: #303036;
@@ -32,53 +44,54 @@ input.submit {
   font-size: 18px;
   transition: 120ms;
 }
-input.submit:hover {
+input.submit-input:hover {
   background: rgb(212, 208, 208);
 }
 
-button {
+#current-button {
   display: inline-block;
-  padding: 7px 5px 7px 5px;
+  padding: 3px 4px;
+  width: 150px;
   border: 1px solid #999;
   color: #303036;
   border-radius: 10px;
   font-size: 18px;
   transition: 120ms;
 }
-
-button:hover {
+.date {
+  display: inline-block;
+  font-size: 12px;
+}
+#current-button:hover {
   background: rgb(212, 208, 208);
 }
 
 h1 {
   display: inline-block;
+  text-align: left;
   font-family: "Bebas Neue", cursive;
-  margin-left: 350px;
-  margin-bottom: 0;
+  text-shadow: 3px 1.5px #b1aeae;
+  margin: 10px 20px;
 }
 
 .cityMarker {
   display: inline-block;
-  color: rgb(255, 241, 188);
+  color: rgb(4 96 100);
 }
 
-.date {
-  display: inline-block;
-  font-size: 16px;
-}
 .tmpr {
   display: inline-block;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 600;
-  margin-left: 750px;
+  margin-left: 5%;
   position: relative;
-  top: -120px;
 }
 .info {
   display: inline-block;
-  margin-left: 950px;
-  position: relative;
-  top: -190px;
+  margin-left: 40%;
+  position: absolute;
+  left: 20%;
+  top: 27%;
 }
 .tmpr,
 .info {
@@ -117,5 +130,6 @@ li {
 }
 
 .footer {
+  font-size: 13px;
   text-align: center;
 }

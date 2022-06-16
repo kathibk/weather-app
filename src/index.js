@@ -62,11 +62,11 @@ function enterCity(event) {
   searchCity(searchInput.value);
 }
 
-let submitForm = document.querySelector("#submitform");
+let submitForm = document.querySelector("#submit-form");
 submitForm.addEventListener("submit", enterCity);
 
 function showWeather(response) {
-  let button = document.querySelector("#current");
+  let button = document.querySelector("#current-button");
   let temperature = Math.round(response.data.main.temp);
   button.innerHTML = `It is currently ${temperature}° in ${response.data.name}`;
 }
@@ -83,5 +83,5 @@ function getGeoTemp(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(retrievePosition);
 }
-let buttonCurrent = document.querySelector("#current");
+let buttonCurrent = document.querySelector("#current-button");
 buttonCurrent.addEventListener("click", getGeoTemp);

@@ -38,8 +38,8 @@ let date = document.querySelector("#currentDate");
 date.innerHTML = formatDate(currentTime);
 
 function scan(response) {
-  let temp = document.querySelector(".tmpr");
-  temp.innerHTML = Math.round(response.data.main.temp) + "℃";
+  let temp = document.querySelector("#temperature");
+  temp.innerHTML = `${Math.round(response.data.main.temp)}`;
   console.log(response.data.main.temp);
   let city = document.querySelector(".cityMarker");
   city.innerHTML = response.data.name;

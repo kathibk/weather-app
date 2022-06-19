@@ -34,15 +34,26 @@ function formatDate(date) {
   return formattedDate;
 }
 let currentTime = new Date();
-let date = document.querySelector("#currentDate");
+let date = document.querySelector(".date");
 date.innerHTML = formatDate(currentTime);
 
 function scan(response) {
   let temp = document.querySelector("#temperature");
+  let city = document.querySelector(".city");
+  let humidity = document.querySelector("#humidity");
+  let windspeed = document.querySelector("#windspeed");
+  let iconElement = document.querySelector("#icon");
+  let descriptionElement = document.querySelector("#description");
   temp.innerHTML = `${Math.round(response.data.main.temp)}`;
-  console.log(response.data.main.temp);
-  let city = document.querySelector(".cityMarker");
   city.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidity.innerHTML = response.data.main.humidity;
+  windspeed.innerHTML = Math.round(response.data.wind.speed);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {
@@ -55,11 +66,8 @@ function searchCity(city) {
 
 function enterCity(event) {
   event.preventDefault();
-  let searchInput = document.querySelector(".searchInput");
-  let city = document.querySelector(".cityMarker");
-  city.innerHTML = `${searchInput.value}`;
-
-  searchCity(searchInput.value);
+  let cityInputElement = document.querySelector(".searchInput");
+  searchCity(cityInputElement.value);
 }
 
 let submitForm = document.querySelector("#submit-form");

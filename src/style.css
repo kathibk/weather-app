@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;600&display=swap");
+
 body {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
@@ -76,7 +76,7 @@ h1 {
   margin: 10px 20px;
 }
 
-.cityMarker {
+.city {
   display: inline-block;
   text-shadow: 2px 1.5px #5bd2eff5;
   font-size: 45px;

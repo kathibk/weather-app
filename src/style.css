@@ -99,11 +99,11 @@ h1 {
 .info {
   margin-bottom: 0;
 }
-#farengheit {
+.units {
   text-decoration: none;
   color: #303036;
 }
-#farengheit:hover {
+.units:hover {
   color: #66d2f9;
 }
 .footer {
